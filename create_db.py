@@ -114,10 +114,7 @@ def main():
         #print(l)
         l = l.split("#")[0]
         l = l.strip().split(",")
-        if len(l)==1:
-          return l[0]
-        else:
-          return l[1]
+        return l[0]
 
       event = pop()
 
