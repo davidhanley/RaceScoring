@@ -9,8 +9,4 @@
   :aot [scoring.core]
   :main scoring.core
 
-  ;:plugins [[lein-ring "0.8.8"]]
-
-  ;:ring {:handler scoring.core/app
-   ;      :init    scoring.core/scoring-start}
    )
