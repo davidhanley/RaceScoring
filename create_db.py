@@ -46,7 +46,7 @@ def translate( name ):
   name = name.upper()
   for t in translations:
     if t[0]==name:
-      print t
+      print "translating", t,t[1]
       return t[1]
   return name
 

@@ -1,4 +1,4 @@
-(defproject cartman "0.0.1"
+(defproject racescoring "0.0.1"
   :description "USASCA scoring system"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/data.csv "0.1.2"]
