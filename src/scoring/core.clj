@@ -1,6 +1,6 @@
 (ns scoring.core
   (:require [clojure.string :as string])
-  (:require [clj-time.core :as t :only [date-time]])
+  ;(:require [clj-time.core :as t :only [date-time]])
   (:require [clojure.data.json :as json])
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]))
