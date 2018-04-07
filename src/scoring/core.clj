@@ -2,6 +2,7 @@
   (:require [clojure.string :as string])
   (:require [clj-time.core :as t :only [date-time]])
   ;(:require [clj-time.format :as f])
+  (:require [clojure.data.json :as json])
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]))
 
@@ -31,6 +32,7 @@
 
 ; TODO: flip it when the format is last, first 
 (defn row-to-athlete-result [race-id row]
+  ;(prn row)
   (let [itm (comp string/trim (list-getter row))]
     {:name    (itm 1)
      :age     (int-or-nil (itm 2))
@@ -54,7 +56,6 @@
   (string/trim (first (string/split str #"#"))))
 
 (defn to-race-struct [filename data race-id]
-  (prn "loading" filename)
   (let [itm (fn [i] (string/trim (get (nth data i) 0)))
         points (Integer. (strip-comment (itm 3)))
         racers (map merge (map (partial row-to-athlete-result race-id) (drop 4 data)) (ranking-list :overall-rank))
@@ -62,7 +63,7 @@
         sexer (fn [sex rank-key] (map merge (filter (fn [athlete] (= (:sex athlete) sex)) racers) score-list (ranking-list rank-key)))
         ]
     {:name          (itm 0)
-     :date          (apply t/date-time (map #(Integer. %) (string/split (itm 1) #"-")))
+     ;:date          (apply t/date-time (map #(Integer. %) (string/split (itm 1) #"-")))
      :url           (itm 2)
      :points        points
      :male-racers   (sexer :male :male-rank)
@@ -71,13 +72,17 @@
      }))
 
 (defn load-race-data [fn id]
-  (with-open [in-file (io/reader fn)]
-    (to-race-struct fn (doall (csv/read-csv in-file)) id)))
+  (when (string/ends-with? fn ".csv")
+    (println "processing " fn)
+    (with-open [in-file (io/reader fn)]
+    (with-open [out-file (io/writer (str fn ".json"))]
+      (let [rd (to-race-struct fn (csv/read-csv in-file) id)]
+        (binding [*out* out-file]
+          (json/pprint rd)))))))
+
 
 (defn load-all-races []
   (map load-race-data (rest (file-seq (java.io.File. "data"))) (range)))
 
-(defn races [] (load-all-races))
-
-
+(defn races []  (load-all-races))
 
