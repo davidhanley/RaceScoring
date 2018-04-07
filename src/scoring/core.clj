@@ -38,7 +38,8 @@
      :age     (int-or-nil (itm 2))
      :sex     (to-sex (itm 3))
      :time    (parse-time-or-nil (itm 4))
-     :race-id race-id}))
+     ;:race-id race-id
+     }))
 
 (defn scores [base]
   "an infinite list of descending scores per rank starting with the base score"
@@ -64,6 +65,7 @@
         ]
     {:name          (itm 0)
      ;:date          (apply t/date-time (map #(Integer. %) (string/split (itm 1) #"-")))
+     :date (itm 1)
      :url           (itm 2)
      :points        points
      :male-racers   (sexer :male :male-rank)
