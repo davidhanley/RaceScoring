@@ -58,7 +58,7 @@
   [str]
   (string/trim (first (string/split str #"#"))))
 
-(defn to-race-struct [filename data race-id]
+(defn to-race-struct [data race-id]
   (let [itm (fn [i] (string/trim (get (nth data i) 0)))
         points (Integer. (strip-comment (itm 3)))
         racers (map merge (map row-to-athlete-result (drop 4 data)) (ranking-list :overall-rank))
@@ -80,7 +80,7 @@
     (println "processing " fn)
     (with-open [in-file (io/reader fn)]
       (with-open [out-file (io/writer (str fn ".json"))]
-        (let [rd (to-race-struct fn (csv/read-csv in-file) id)]
+        (let [rd (to-race-struct (csv/read-csv in-file) id)]
           (binding [*out* out-file]
             (json/pprint rd)))))))
 
