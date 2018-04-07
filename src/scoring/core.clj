@@ -1,7 +1,6 @@
 (ns scoring.core
   (:require [clojure.string :as string])
   (:require [clj-time.core :as t :only [date-time]])
-  ;(:require [clj-time.format :as f])
   (:require [clojure.data.json :as json])
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]))
@@ -22,11 +21,16 @@
     (catch Exception e nil))
   )
 
-(defn to-sex [data]
-  (case (first (string/upper-case data))
-    \F {:sex :female}
-    \M {:sex :male}
-    nil))
+(defn to-sex
+  "parse the gender from the row, and also foreign status if present"
+  [data]
+  (let [d (string/upper-case data)
+        sw (fn [p] (string/starts-with? d p))]
+    (cond
+      (sw "M") {:sex :male}
+      (sw "F") {:sex :female}
+      (sw "*M") {:sex :male :foreign true}
+      (sw "*F") {:sex :female :foreign true})))
 
 (defn list-getter [lst]
   #(try (nth lst %) (catch Exception e "")))
