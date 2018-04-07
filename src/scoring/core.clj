@@ -32,14 +32,13 @@
   #(try (nth lst %) (catch Exception e "")))
 
 ; TODO: flip it when the format is last, first 
-(defn row-to-athlete-result [race-id row]
+(defn row-to-athlete-result [row]
   "turn a row into an athlete object"
   (let [itm (comp string/trim (list-getter row))]
     (merge {:name (itm 1)}
            (int-or-nil :age (itm 2))
            (to-sex (itm 3))
            (parse-time-or-nil (itm 4))
-           ;:race-id race-id
            )))
 
 (defn scores [base]
@@ -58,7 +57,7 @@
 (defn to-race-struct [filename data race-id]
   (let [itm (fn [i] (string/trim (get (nth data i) 0)))
         points (Integer. (strip-comment (itm 3)))
-        racers (map merge (map (partial row-to-athlete-result race-id) (drop 4 data)) (ranking-list :overall-rank))
+        racers (map merge (map row-to-athlete-result (drop 4 data)) (ranking-list :overall-rank))
         score-list (scores points)
         sexer (fn [sex rank-key] (map merge (filter (fn [athlete] (= (:sex athlete) sex)) racers) score-list (ranking-list rank-key)))
         ]
