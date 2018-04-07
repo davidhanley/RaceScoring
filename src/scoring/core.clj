@@ -65,7 +65,7 @@
         score-list (scores points)
         sexer (fn [sex rank-key] (map #(dissoc % :sex)
                                       (map merge (filter (fn [athlete] (= (:sex athlete) sex)) racers) score-list
-                                                 (ranking-list rank-key))))
+                                           (ranking-list rank-key))))
         ]
     {:name          (itm 0)
      ;:date          (apply t/date-time (map #(Integer. %) (string/split (itm 1) #"-")))
@@ -77,18 +77,22 @@
      :race-id       race-id
      }))
 
+;; TODO: make this just load, add a function to load and
 (defn load-race-data [fn id]
+  (with-open [in-file (io/reader fn)]
+    (let [rr (to-race-struct (csv/read-csv in-file) id)]
+      (count (:male-racers rr))                             ;; what better way to force evaluation?
+      rr)))
+
+(defn process-race-data [fn id]
   (when (string/ends-with? fn ".csv")
     (println "processing " fn)
-    (with-open [in-file (io/reader fn)]
-      (with-open [out-file (io/writer (str fn ".json"))]
-        (let [rd (to-race-struct (csv/read-csv in-file) id)]
-          (binding [*out* out-file]
-            (json/pprint rd)))))))
+    (with-open [out-file (io/writer (str fn ".json"))]
+      (binding [*out* out-file]
+        (json/pprint (load-race-data fn id))))))
 
+(defn process-all-races []
+  (map process-race-data (rest (file-seq (java.io.File. "data"))) (range)))
 
-(defn load-all-races []
-  (map load-race-data (rest (file-seq (java.io.File. "data"))) (range)))
-
-(defn races [] (load-all-races))
+(defn races [] (process-all-races))
 

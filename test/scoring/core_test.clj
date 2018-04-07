@@ -29,11 +29,7 @@
     ))
 
 
-(def esbru
-  (let [in-file (io/reader "data/2017-esbru.csv")
-   csvi (csv/read-csv in-file)
-   race (to-race-struct csvi 666)]
-  race))
+(def esbru (load-race-data "data/2017-esbru.csv" 666))
 
 (def esbru-males (:male-racers esbru))
 (def esbru-females (:female-racers esbru))
