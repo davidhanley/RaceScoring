@@ -63,9 +63,10 @@
         points (Integer. (strip-comment (itm 3)))
         racers (map merge (map row-to-athlete-result (drop 4 data)) (ranking-list :overall-rank))
         score-list (scores points)
-        sexer (fn [sex rank-key] (map #(dissoc % :sex)
-                                      (map merge (filter (fn [athlete] (= (:sex athlete) sex)) racers) score-list
-                                           (ranking-list rank-key))))
+        sexer (fn [sex rank-key] (doall                     ; force this to happen since it's in a with-file
+                                   (map #(dissoc % :sex)
+                                        (map merge (filter (fn [athlete] (= (:sex athlete) sex)) racers) score-list
+                                             (ranking-list rank-key)))))
         ]
     {:name          (itm 0)
      ;:date          (apply t/date-time (map #(Integer. %) (string/split (itm 1) #"-")))
@@ -77,12 +78,9 @@
      :race-id       race-id
      }))
 
-;; TODO: make this just load, add a function to load and
 (defn load-race-data [fn id]
   (with-open [in-file (io/reader fn)]
-    (let [rr (to-race-struct (csv/read-csv in-file) id)]
-      (count (:male-racers rr))                             ;; what better way to force evaluation?
-      rr)))
+    (to-race-struct (csv/read-csv in-file) id)))
 
 (defn process-race-data [fn id]
   (when (string/ends-with? fn ".csv")
