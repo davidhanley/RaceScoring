@@ -12,7 +12,7 @@
   (try {key (Integer. data)} (catch Exception e nil)))
 
 
-(defn parse-time-or-nil [time] time
+(defn parse-time-or-nil [time]
   (try
     {:time (let [[intpart dec] (string/split time #"\.")
                  [ss mm hh] (reverse (map #(Integer. %) (string/split intpart #":")))
@@ -78,16 +78,16 @@
      :race-id       race-id
      }))
 
-(defn load-race-data [fn id]
-  (with-open [in-file (io/reader fn)]
+(defn load-race-data [filename id]
+  (with-open [in-file (io/reader filename)]
     (to-race-struct (csv/read-csv in-file) id)))
 
-(defn process-race-data [fn id]
-  (when (string/ends-with? fn ".csv")
-    (println "processing " fn)
-    (with-open [out-file (io/writer (str fn ".json"))]
+(defn process-race-data [filename id]
+  (when (string/ends-with? filename ".csv")
+    (println "processing " filename)
+    (with-open [out-file (io/writer (str filename ".json"))]
       (binding [*out* out-file]
-        (json/pprint (load-race-data fn id))))))
+        (json/pprint (load-race-data filename id))))))
 
 (defn process-all-races []
   (map process-race-data (rest (file-seq (java.io.File. "data"))) (range)))
