@@ -48,12 +48,12 @@
     (is (= (:points esbru) 200)))
 
   (testing "did i get the males right (counting foreigners"
-    (is (= first-esbru-male {:name "Piotr Lobodzinski", :sex :male, :foreign true, :overall-rank 1, :score 200, :male-rank 1}))
-    (is (= fourth-esbru-male {:name "Sproule Love", :sex :male, :overall-rank 4, :score 125, :male-rank 4})))
+    (is (= first-esbru-male {:name "Piotr Lobodzinski", :foreign true, :overall-rank 1, :score 200, :male-rank 1}))
+    (is (= fourth-esbru-male {:name "Sproule Love", :overall-rank 4, :score 125, :male-rank 4})))
 
   (testing "did i get the females right (counting foreigners"
-    (is (= first-esbru-female {:name "Suzy Walsham", :sex :female, :foreign true, :overall-rank 9, :score 200, :female-rank 1}))
-    (is (= second-esbru-female {:name "Cindy Harris", :sex :female, :overall-rank 15, :score 500/3, :female-rank 2}))
+    (is (= first-esbru-female {:name "Suzy Walsham", :foreign true, :overall-rank 9, :score 200, :female-rank 1}))
+    (is (= second-esbru-female {:name "Cindy Harris", :overall-rank 15, :score 500/3, :female-rank 2}))
     )
 
 
