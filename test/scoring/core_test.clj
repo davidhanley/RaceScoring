@@ -4,10 +4,11 @@
             [clojure.java.io :as io]
             [clojure.data.csv :as csv]))
 
-(deftest test-int-parsing
-  (testing "bad int parses should be nil"
-    (is (= (int-or-nil :age "5") {:age 5}))
-    (is (= (int-or-nil :age "dave") nil))))
+; todo: rewrite this as year-age tests
+; (deftest test-int-parsing
+; (testing "bad int parses should be nil"
+;(is (= (int-or-nil :age "5") {:age 5}))
+; (is (= (int-or-nil :age "dave") nil))) )
 
 (deftest test-gender-parsing
   (testing "if gender parsing works "
@@ -20,10 +21,10 @@
 
 (deftest row-parse-test
   (testing "if row parsing works"
-    (is (= (row-to-athlete-result ["", "dave", "42", "m"]) {:name "dave", :age 42, :sex :male}))
-    (is (= (row-to-athlete-result ["", "dave", "42", "*m"]) {:name "dave", :age 42, :sex :male :foreign true}))
+    (is (= (row-to-athlete-result ["", "dave", "42", "m"] [2014 1 28]) {:name "dave", :birth-year 1972, :sex :male}))
+    (is (= (row-to-athlete-result ["", "dave", "42", "*m"] [2014 1 28]) {:name "dave", :birth-year 1972, :sex :male :foreign true}))
     (is (=
-          (row-to-athlete-result ["1", "Piotr Lobodzinski", "", "*M", "10:31:00 AM", "Bielsk Podlaski, WARSAW", "4Flex/Adidas,Details"])
+          (row-to-athlete-result ["1", "Piotr Lobodzinski", "", "*M", "10:31:00 AM", "Bielsk Podlaski, WARSAW", "4Flex/Adidas,Details"] [])
           {:name "Piotr Lobodzinski", :sex :male, :foreign true}
           ))
     ))
@@ -51,6 +52,5 @@
     (is (= first-esbru-female {:name "Suzy Walsham", :foreign true, :overall-rank 9, :score 200, :female-rank 1}))
     (is (= second-esbru-female {:name "Cindy Harris", :overall-rank 15, :score 500/3, :female-rank 2}))
     )
-
 
   )
