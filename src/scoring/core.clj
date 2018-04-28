@@ -1,14 +1,11 @@
 (ns scoring.core
   (:require [clojure.string :as string])
-  ;(:require [clj-time.core :as t :only [date-time]])
   (:require [clojure.data.json :as json])
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]))
 
 
 (defn l [] (use 'scoring.core :reload))
-
-
 
 
 (defn parse-time-or-nil [time]
@@ -104,7 +101,7 @@
             (json/pprint (load-race-data filename id))))))))
 
 (defn process-all-races []
-  (pmap process-race-data (map str (rest (file-seq (java.io.File. "data")))) (range)))
+  (map process-race-data (map str (rest (file-seq (java.io.File. "data")))) (range)))
 
 (defn races [] (process-all-races))
 
