@@ -90,15 +90,21 @@
   (with-open [in-file (io/reader filename)]
     (to-race-struct (csv/read-csv in-file) id)))
 
+(defn new-or-newer [fns]
+  (let [timestamps (map #(.lastModified (java.io.File. %)) fns)]
+    (or (zero? (second timestamps)) (> (first timestamps) (second timestamps)))))
+
 (defn process-race-data [filename id]
   (when (string/ends-with? filename ".csv")
-    (println "processing " filename)
-    (with-open [out-file (io/writer (str filename ".json"))]
-      (binding [*out* out-file]
-        (json/pprint (load-race-data filename id))))))
+    (let [target-file (str filename ".json")]
+      (when (new-or-newer [filename target-file])
+        (println "processing " filename)
+        (with-open [out-file (io/writer target-file)]
+          (binding [*out* out-file]
+            (json/pprint (load-race-data filename id))))))))
 
 (defn process-all-races []
-  (map process-race-data (rest (file-seq (java.io.File. "data"))) (range)))
+  (pmap process-race-data (map str (rest (file-seq (java.io.File. "data")))) (range)))
 
 (defn races [] (process-all-races))
 
