@@ -7,11 +7,8 @@
 
 (defn l [] (use 'scoring.core :reload))
 
-(defn int-or-nil [key data]
-  (try {key (Integer. data)} (catch Exception e nil)))
 
-
-(defn parse-time-or-nil [time] time
+(defn parse-time-or-nil [time]
   (try
     {:time (let [[intpart dec] (string/split time #"\.")
                  [ss mm hh] (reverse (map #(Integer. %) (string/split intpart #":")))
@@ -34,12 +31,19 @@
 (defn list-getter [lst]
   #(try (nth lst %) (catch Exception e "")))
 
-; TODO: flip it when the format is last, first 
-(defn row-to-athlete-result [row]
+; (defn int-or-nil [key data]
+;  (try {key (Integer. data)} (catch Exception e nil)))
+
+(defn parse-age-to-birth-year [age race-date]
+  (try {:birth-year (- (first race-date) (Integer. age))}
+       (catch Exception e nil)))
+
+; TODO: flip it when the format is last, first
+(defn row-to-athlete-result [row race-date]
   "turn a row into an athlete object"
   (let [itm (comp string/trim (list-getter row))]
     (merge {:name (itm 1)}
-           (int-or-nil :age (itm 2))
+           (parse-age-to-birth-year (itm 2) race-date)
            (to-sex (itm 3))
            (parse-time-or-nil (itm 4))
            )))
@@ -60,15 +64,18 @@
 (defn to-race-struct [data race-id]
   (let [itm (fn [i] (string/trim (get (nth data i) 0)))
         points (Integer. (strip-comment (itm 3)))
-        racers (map merge (map row-to-athlete-result (drop 4 data)) (ranking-list :overall-rank))
+        race-date (map #(Integer. %) (string/split (itm 1) #"-"))
+        racers (map merge (map #(row-to-athlete-result % race-date) (drop 4 data)) (ranking-list :overall-rank))
         score-list (scores points)
-        sexer (fn [sex rank-key] (map #(dissoc % :sex)
-                                      (map merge (filter (fn [athlete] (= (:sex athlete) sex)) racers) score-list
-                                                 (ranking-list rank-key))))
+        sexer (fn [sex rank-key] (doall                     ; force this to happen since it's in a with-file
+                                   (map #(dissoc % :sex)
+                                        (map merge
+                                             (filter (fn [athlete] (= (:sex athlete) sex)) racers)
+                                             score-list
+                                             (ranking-list rank-key)))))
         ]
     {:name          (itm 0)
-     ;:date          (apply t/date-time (map #(Integer. %) (string/split (itm 1) #"-")))
-     :date          (itm 1)
+     :date          race-date
      :url           (itm 2)
      :points        points
      :male-racers   (sexer :male :male-rank)
@@ -76,18 +83,25 @@
      :race-id       race-id
      }))
 
-(defn load-race-data [fn id]
-  (when (string/ends-with? fn ".csv")
-    (println "processing " fn)
-    (with-open [in-file (io/reader fn)]
-      (with-open [out-file (io/writer (str fn ".json"))]
-        (let [rd (to-race-struct (csv/read-csv in-file) id)]
+(defn load-race-data [filename id]
+  (with-open [in-file (io/reader filename)]
+    (to-race-struct (csv/read-csv in-file) id)))
+
+(defn new-or-newer [fns]
+  (let [timestamps (map #(.lastModified (java.io.File. %)) fns)]
+    (or (zero? (second timestamps)) (> (first timestamps) (second timestamps)))))
+
+(defn process-race-data [filename id]
+  (when (string/ends-with? filename ".csv")
+    (let [target-file (str filename ".json")]
+      (when (new-or-newer [filename target-file])
+        (println "processing " filename)
+        (with-open [out-file (io/writer target-file)]
           (binding [*out* out-file]
-            (json/pprint rd)))))))
+            (json/pprint (load-race-data filename id))))))))
 
+(defn process-all-races []
+  (map process-race-data (map str (rest (file-seq (java.io.File. "data")))) (range)))
 
-(defn load-all-races []
-  (map load-race-data (rest (file-seq (java.io.File. "data"))) (range)))
-
-(defn races [] (load-all-races))
+(defn races [] (process-all-races))
 
