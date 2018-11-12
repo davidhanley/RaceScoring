@@ -13,40 +13,28 @@ Willis tower 2018
 9,Cindy Harris,,F40-49,00:15:31
 10,Harrison Kieffer,,M20-29,00:15:59
 11,John Osborn,,M40-49,00:17:05
+1,Alan Zaffiro,,M60-69,00:17:06
 12,Joshua Duncan,,Male,00:17:14
 13,Mark Ewell,,M40-49,00:17:15
 14,David Tromp,,M40-49,00:17:16
 15,Stephanie Hucko,,F40-49,00:17:18
+2,Christopher Mack,,M30-39,00:17:20
+3,Russell Webb,,M30-39,00:17:21
+4,Michael Guidotti,,M40-49,00:17:22
 16,Meg Santanna,,Female,00:17:29
+5,Jock Cameron,,M50-59,00:17:38
 17,Maria Elisa Lopez,,Female,00:17:53
 18,Sherri Breese,,Female,00:17:55
 19,Araceli Castillo,,F30-39,00:17:58
 20,Roberto Velazquez,,M40-49,00:18:01
-21,Hal Carlson,,M60-69,00:18:06
-22,Christine Soskins,,F30-39,00:18:07
-23,Natalie Doolittle-Shadel,,F30-39,00:18:15
-24,Scott Stanley,,M50-59,00:18:25
-25,Olga Starikova,,F40-49,00:19:04
-26,Arturo Velazquez,,M40-49,00:19:08
-27,Robert Klinko,,M40-49,00:19:19
-28,David Hanley,,M40-49,00:19:35
-29,Itziar Riquelme,,Female,00:20:20
-30,Linda Viner,,Female,00:20:43
-31,Suzanne Bergen,,F50-59,00:20:46
-32,Steve Stermer,,M60-69,00:21:07
-33,Madeleine Fontillas Ronk,,F12-19,00:25:11
-34,Zivadin Zivkovic,,F50-59,00:26:10
-35,Oscar Gonzalez,,M30-39,00:30:45
-Rank,Name,,Division,Time
-1,Alan Zaffiro,,M60-69,00:17:06
-2,Christopher Mack,,M30-39,00:17:20
-3,Russell Webb,,M30-39,00:17:21
-4,Michael Guidotti,,M40-49,00:17:22
-5,Jock Cameron,,M50-59,00:17:38
 6,Timothy Kinkelaar,,M50-59,00:18:01
 7,Kevin Durbon,,M20-29,00:18:03
+21,Hal Carlson,,M60-69,00:18:06
+22,Christine Soskins,,F30-39,00:18:07
 8,Suresh Decosta,,M40-49,00:18:09
 9,Daniel Brugos,,M50-59,00:18:12
+23,Natalie Doolittle-Shadel,,F30-39,00:18:15
+24,Scott Stanley,,M50-59,00:18:25
 10,David Leitheiser,,M50-59,00:18:28
 11,Bart Huff,,M50-59,00:18:28
 12,Ryan Rathbun,,M40-49,00:18:32
@@ -54,11 +42,15 @@ Rank,Name,,Division,Time
 14,Eli Whiting,,M12-19,00:18:37
 15,George Patterson III,,M30-39,00:18:43
 16,Jorge Carral,,M30-39,00:18:46
+25,Olga Starikova,,F40-49,00:19:04
+26,Arturo Velazquez,,M40-49,00:19:08
 17,Paul Nowaczyk,,M12-19,00:19:10
 18,Frank Gauthier,,M40-49,00:19:12
 19,Jean-Roch GRENETIER,,M50-59,00:19:18
+27,Robert Klinko,,M40-49,00:19:19
 20,Brendan Connery,,M12-19,00:19:25
 21,Patrick Boyle,,M12-19,00:19:31
+28,David Hanley,,M40-49,00:19:35
 22,Daniel Noboa,,M20-29,00:19:39
 23,Josh Jackett,,M30-39,00:19:41
 24,Scott Cochrane,,M60-69,00:19:44
@@ -68,13 +60,17 @@ Rank,Name,,Division,Time
 28,Jack Czerwiec,,M12-19,00:20:05
 29,Catherine Demet,,F50-59,00:20:18
 30,David Stermer,,M50-59,00:20:19
+29,Itziar Riquelme,,Female,00:20:20
 31,Viorel Stirbu,,M60-69,00:20:22
 32,Leo Maday,,M12-19,00:20:22
 33,Olivier Liegeon,,M20-29,00:20:27
 34,Kjirstin Glessner,,F30-39,00:20:32
 35,Gavin Henderson,,M20-29,00:20:33
+30,Linda Viner,,Female,00:20:43
+31,Suzanne Bergen,,F50-59,00:20:46
 36,Deborah Officer,,F40-49,00:20:59
 37,Floris Ouwendijk,,M30-39,00:21:06
+32,Steve Stermer,,M60-69,00:21:07
 38,Gavin Kafkakis,,M12-19,00:21:08
 39,Ryan Purnell,,M30-39,00:21:12
 40,Isaak Leeke,,M20-29,00:21:12
@@ -138,7 +134,6 @@ Rank,Name,,Division,Time
 98,Christopher Watson,,M20-29,00:23:06
 99,Eric Johnson,,M40-49,00:23:07
 100,Nikolas Dimitriou,,M12-19,00:23:10
-Rank,Name,,Division,Time
 101,Tony Loiacono,,M30-39,00:23:17
 102,Jackson Gorman,,M20-29,00:23:18
 103,Michael Khuans,,M20-29,00:23:18
@@ -223,6 +218,7 @@ Rank,Name,,Division,Time
 182,Kyle Faulkner,,M20-29,00:25:06
 183,Joe Tomaino,,M30-39,00:25:10
 184,Shannon Boughn,,F50-59,00:25:11
+33,Madeleine Fontillas Ronk,,F12-19,00:25:11
 185,Charles Bower,,M50-59,00:25:12
 186,Matthew Rosner,,M40-49,00:25:14
 187,Jason Brown,,M40-49,00:25:14
@@ -239,7 +235,6 @@ Rank,Name,,Division,Time
 198,Jeffrey Bolek,,M60-69,00:25:31
 199,Jean Brown,,F40-49,00:25:32
 200,Todd Rieger,,M40-49,00:25:32
-Rank,Name,,Division,Time
 201,Rebecca Ladner,,F20-29,00:25:33
 202,Joe Doyle,,M40-49,00:25:37
 203,Przemyslaw Szumowski,,M30-39,00:25:39
@@ -276,6 +271,7 @@ Rank,Name,,Division,Time
 234,Margo Greenfield Freitas,,F30-39,00:26:08
 235,Ryan Greenfield,,F40-49,00:26:09
 236,Barry Fleischer,,Male,00:26:10
+34,Zivadin Zivkovic,,F50-59,00:26:10
 237,Connor Dawson,,M30-39,00:26:11
 238,Alexandra Zikesch,,F30-39,00:26:12
 239,Jose Bueno,,M30-39,00:26:13
@@ -287,8 +283,8 @@ Rank,Name,,Division,Time
 245,Amanda Muller,,F12-19,00:26:17
 246,Michelle Mize,,F40-49,00:26:17
 247,Neeta Singh,,F50-59,00:26:19
-248,Charles Bailey,,M40-49,00:26:21
 248,Brian Heinrich,,M20-29,00:26:21
+248,Charles Bailey,,M40-49,00:26:21
 250,Louis Naphin,,F12-19,00:26:21
 251,Erica Khan,,F30-39,00:26:22
 252,Nick Fiflis,,M12-19,00:26:22
@@ -340,7 +336,6 @@ Rank,Name,,Division,Time
 298,Katarzyna Stadnik,,F40-49,00:27:05
 299,Luis Cesar Altamirano,,M60-69,00:27:05
 300,Lindsey Vaughn,,F30-39,00:27:06
-Rank,Name,,Division,Time
 301,Ian Wright,,M20-29,00:27:06
 302,Greg Kruse,,M30-39,00:27:06
 303,Karen O'Neill,,F50-59,00:27:07
@@ -441,7 +436,6 @@ Rank,Name,,Division,Time
 398,Scott Piner,,M30-39,00:28:06
 399,Sarah Parks,,F20-29,00:28:06
 400,Jessica Huerta,,F30-39,00:28:08
-Rank,Name,,Division,Time
 401,MATT SHUBA,,M30-39,00:28:08
 402,Andrew Ahmeti,,M12-19,00:28:09
 403,Karen Lavengood,,F50-59,00:28:10
@@ -542,7 +536,6 @@ Rank,Name,,Division,Time
 498,Brenda Saldivar,,F20-29,00:29:32
 499,Derek Bumrungsiri,,M40-49,00:29:32
 500,Jordan Knue,,M30-39,00:29:32
-Rank,Name,,Division,Time
 501,Paul Heran,,M70+,00:29:32
 502,Manasi Shenolikar,,F20-29,00:29:33
 503,Erin Walaszek,,F30-39,00:29:33
@@ -643,9 +636,9 @@ Rank,Name,,Division,Time
 598,Kaitlin Peters,,F30-39,00:30:44
 599,Aaron Cox,,M30-39,00:30:44
 600,rocio rubalcava,,F30-39,00:30:44
-Rank,Name,,Division,Time
 601,Meghan Warshauer,,F12-19,00:30:44
 602,Jennifer LaFleur,,F40-49,00:30:44
+35,Oscar Gonzalez,,M30-39,00:30:45
 603,Khaled Abouied,,M20-29,00:30:45
 604,Erin Dees,,F20-29,00:30:45
 605,Samantha Nilles,,F20-29,00:30:46
@@ -658,8 +651,8 @@ Rank,Name,,Division,Time
 612,Ashley Laken,,F30-39,00:30:52
 613,Megan Hayes,,F20-29,00:30:52
 614,Ginnifer Jobgen,,F40-49,00:30:53
-615,Joseph Thometz,,M50-59,00:30:55
 615,Heidi Duran,,F40-49,00:30:55
+615,Joseph Thometz,,M50-59,00:30:55
 617,Matthew Quang,,M20-29,00:30:56
 618,Emma Lipasti,,F20-29,00:30:56
 619,Michelle Nielsen,,F40-49,00:30:57
@@ -744,7 +737,6 @@ Rank,Name,,Division,Time
 698,Aaron Smith,,M40-49,00:32:00
 699,Carli Dunn,,F20-29,00:32:02
 700,Jessica Wilson,,F20-29,00:32:03
-Rank,Name,,Division,Time
 701,Immanuel Umenei,,M30-39,00:32:04
 702,James Mitchell,,M30-39,00:32:05
 703,Nicollette Khuans,,F20-29,00:32:05
@@ -845,7 +837,6 @@ Rank,Name,,Division,Time
 798,Jessica Burkert,,F40-49,00:33:37
 799,Julie Schechter,,F30-39,00:33:38
 800,Jaime Valtierra,,M50-59,00:33:38
-Rank,Name,,Division,Time
 801,Nuriddin Tussipov,,M20-29,00:33:39
 802,Jeff Metz,,M40-49,00:33:39
 803,Cooper Meno,,M1-11,00:33:39
@@ -946,7 +937,6 @@ Rank,Name,,Division,Time
 898,Jon Ruzich,,M40-49,00:35:20
 899,Anthony Muller,,M12-19,00:35:20
 900,Jonathan Jain,,M20-29,00:35:20
-Rank,Name,,Division,Time
 901,Jennifer Sanders,,F40-49,00:35:22
 902,Ann Angel,,F50-59,00:35:25
 903,Isabel Ruzich,,F1-11,00:35:25
@@ -1045,9 +1035,8 @@ Rank,Name,,Division,Time
 996,Kelly Prigge,,F50-59,00:37:33
 997,Dave Stodola,,M30-39,00:37:33
 998,Daniel Suarez,,M30-39,00:37:34
-999,Diana Rios,,F20-29,00:37:36
 1000,Jenn Wilcox,,F40-49,00:37:36
-Rank,Name,,Division,Time
+999,Diana Rios,,F20-29,00:37:36
 1001,Ramsey Salhat,,M20-29,00:37:38
 1002,Eden Culpepper,,F40-49,00:37:42
 1003,Kayla Jones,,F20-29,00:37:42
@@ -1148,7 +1137,6 @@ Rank,Name,,Division,Time
 1098,Ted Effertz,,M30-39,00:39:59
 1099,Emmy Werd,,F12-19,00:40:02
 1100,Ryen Kilander,,F12-19,00:40:02
-Rank,Name,,Division,Time
 1101,Kathleen Hopps,,F12-19,00:40:03
 1102,Mandy Weaver,,F40-49,00:40:07
 1103,Stephen Park,,M60-69,00:40:09
@@ -1249,7 +1237,6 @@ Rank,Name,,Division,Time
 1198,Troy Heavelyn,,M50-59,00:42:50
 1199,Laura Men,,F50-59,00:42:54
 1200,Angela Cisneros,,F50-59,00:42:54
-Rank,Name,,Division,Time
 1201,Irine Sorser,,F30-39,00:42:56
 1202,Weston Ball,,M12-19,00:42:57
 1203,Deanna Rine,,F30-39,00:43:00
@@ -1274,8 +1261,8 @@ Rank,Name,,Division,Time
 1222,Kevin Regan,,M60-69,00:43:26
 1223,Rozanne Murphy,,F50-59,00:43:29
 1224,Michael McGrew,,M40-49,00:43:30
-1225,Melissa Waud,,F50-59,00:43:31
 1225,Horacio Padilla,,M30-39,00:43:31
+1225,Melissa Waud,,F50-59,00:43:31
 1227,Colleen Wiegmann,,F20-29,00:43:33
 1228,Christian Stueber,,M40-49,00:43:33
 1229,Logan Murphy,,M1-11,00:43:34
@@ -1350,7 +1337,6 @@ Rank,Name,,Division,Time
 1298,Sharon Copack,,F30-39,00:46:03
 1299,Ashley Fields,,F20-29,00:46:04
 1300,MARIA AYALA,,F30-39,00:46:07
-Rank,Name,,Division,Time
 1301,James Sliwa,,M60-69,00:46:09
 1302,Susan Drury,,F50-59,00:46:12
 1303,Mark Barone,,M40-49,00:46:14
@@ -1451,7 +1437,6 @@ Rank,Name,,Division,Time
 1398,rosmery soriano moore,,F40-49,00:51:07
 1399,Liana Davila,,F40-49,00:51:07
 1400,Taylor Peterson,,F1-11,00:51:08
-Rank,Name,,Division,Time
 1401,Ross Martin,,M30-39,00:51:09
 1402,Teresa Peterson,,F30-39,00:51:09
 1403,Mario DiBenedetto,,M60-69,00:51:10
@@ -1552,7 +1537,6 @@ Rank,Name,,Division,Time
 1498,Zachary Gilskey,,M30-39,00:57:22
 1499,Sarah Gortowski,,F20-29,00:57:26
 1500,Brian Andrews,,M40-49,00:57:33
-Rank,Name,,Division,Time
 1501,Joe Garcia,,M30-39,00:57:36
 1502,Raju Datla,,M40-49,00:57:41
 1503,Patrick Hageman,,M30-39,00:57:43
@@ -1653,7 +1637,6 @@ Rank,Name,,Division,Time
 1598,Ajla Muminhodzic,,F12-19,01:09:28
 1599,LaKeisha Freeman,,F30-39,01:09:34
 1600,Lena Tleib,,F30-39,01:09:40
-Rank,Name,,Division,Time
 1601,Bob Bouse,,M50-59,01:09:43
 1602,Maciej Kogutek,,M40-49,01:09:59
 1603,Bonnie Velasco,,F40-49,01:09:59
@@ -1710,7 +1693,6 @@ Rank,Name,,Division,Time
 1654,Kylie Corks,,F12-19,01:22:17
 1655,Sef Williams,,M50-59,01:22:38
 1656,Jerry Huntley,,M60-69,01:23:00
-1657,"Maddix Moore,lll.",,M60-69,01:23:13
 1658,Blair West-Keyes,,M20-29,01:24:04
 1659,Traci Chapman,,F40-49,01:24:29
 1660,SUE WADKINS,,F60-69,01:24:57
@@ -1754,7 +1736,6 @@ Rank,Name,,Division,Time
 1698,Tatia Tyson,,F40-49,01:40:52
 1699,Rebecca Burnett-Vitucci,,F30-39,01:42:39
 1700,Daniel Moeller,,M20-29,01:43:16
-Rank,Name,,Division,Time
 1701,Tom Porter,,M40-49,01:43:28
 1702,Ruby McCleary,,F40-49,01:45:53
 1703,Sheryl Campen,,F60-69,01:50:45
@@ -1785,3 +1766,4 @@ Rank,Name,,Division,Time
 1728,Khalid Alwabil,,M20-29,04:09:42
 1729,Ravleen Sain,,F30-39,04:37:08
 1730,Harvir Gambhir,,M30-39,04:37:09
+1657,"Maddix Moore,lll.",,M60-69,01:23:13
