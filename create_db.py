@@ -122,8 +122,8 @@ def main():
       date = datetime.date( dp[0] , dp[1], dp[2]  )
 
       pseudoNow = datetime.date.today()
-      pseudoNow = datetime.date( 2018 , 12 , 31) 
-      if date > pseudonow or date < pseudonow - datetime.timedelta(365):
+      #pseudoNow = datetime.date( 2018 , 12 , 31) 
+      if date > pseudoNow or date < pseudoNow - datetime.timedelta(365):
         print "******event is over a year old, skipping" 
         continue 
       #so much ugly code, especially this:
