@@ -50,8 +50,8 @@ def translate( name ):
   name = name.upper()
   for t in translations:
     if re.match(t[0],name) and name<>t[1]:
-      print "translating", t[2],",",name,",",t[1]
-      return t[1]
+      print "translating", name,"to",t[1]
+      return t[1].strip()
   return name
 
 def find_racer( name , age , gender ):
@@ -77,6 +77,7 @@ def try_add( name , age , gender ):
     return id
   try:
     age = int( age )
+    name = translate(name)
     c.execute( "insert into athlete( name , sex , age ) values( ? , ? , ? )" , ( name , gender , age ) )
   except:
     c.execute( "insert into athlete( name , sex ) values( ? , ? )" , ( name , gender ) )
