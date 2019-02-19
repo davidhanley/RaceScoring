@@ -87,6 +87,7 @@
 'compile': 'compilar',
 'compiled application removed': 'aplicación compilada eliminada',
 'Components and Plugins': 'Componentes y Plugins',
+'Confirm Password': 'Confirm Password',
 'contains': 'contiene',
 'Controller': 'Controlador',
 'Controllers': 'Controladores',
