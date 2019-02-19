@@ -42,6 +42,7 @@ c.execute( "delete from sheets where 1=1" )
 translations = open( 'translate.dat' , 'r' ).readlines()
 translations = [ t.strip().upper().split(',') for t in translations ]
 for tr in translations:
+  tr.append(tr[0])
   tr[0] = re.compile(tr[0])
 print translations 
 
@@ -49,7 +50,7 @@ def translate( name ):
   name = name.upper()
   for t in translations:
     if re.match(t[0],name) and name<>t[1]:
-      print "translating", t[0],name,t[1]
+      print "translating", t[2],",",name,",",t[1]
       return t[1]
   return name
 
@@ -111,7 +112,7 @@ def main():
   for sheet in sheets:
     sheet = sheet.strip()
     with open( sheet ) as results_file:
-      print >> sys.stderr , "processing" , sheet 
+      #print >> sys.stderr , "processing" , sheet 
       def pop():
         l = results_file.readline()
         #print(l)
@@ -127,7 +128,7 @@ def main():
       pseudoNow = datetime.date.today()
       #pseudoNow = datetime.date( 2018 , 12 , 31) 
       if date > pseudoNow or date < pseudoNow - datetime.timedelta(365):
-        print "******event is over a year old, skipping" 
+        #print "******event is over a year old, skipping" 
         continue 
       #so much ugly code, especially this:
       fs = pop()
