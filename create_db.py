@@ -10,6 +10,7 @@ import math
 import sqlite3
 import common
 import datetime
+import re
 
 #try:
 #  os.remove( 'results.db' )
@@ -40,13 +41,15 @@ c.execute( "delete from sheets where 1=1" )
 
 translations = open( 'translate.dat' , 'r' ).readlines()
 translations = [ t.strip().upper().split(',') for t in translations ]
+for tr in translations:
+  tr[0] = re.compile(tr[0])
 print translations 
 
 def translate( name ):
   name = name.upper()
   for t in translations:
-    if t[0]==name:
-      print "translating", t,t[1]
+    if re.match(t[0],name) and name<>t[1]:
+      print "translating", t[0],name,t[1]
       return t[1]
   return name
 
