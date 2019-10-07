@@ -2,9 +2,11 @@
 2019-9-29
 
 200
-,Tristan Roth,35,M,4:35
+,Claim,Roth,Tristan,4:17
+,Mark Henderson,56,M,4:35
 ,Russell Webb,34,M,4:49
-,Martin Pedersen,41,M,4:58
+,Martin Pedersen,41,M,4:55
+,Mark Ewell,46,M,4:58
 ,Geoff Andrist,41,M,5:13
 ,Spencer Lazzar,31,M,5:19
 ,Joshua Duncan,42,M,5:22
@@ -16,20 +18,25 @@
 ,David Hanley,46,M,6:12
 ,Abe Christianson,10,M,6:17
 ,Andre Ellison,32,M,6:17
+,Debbie Officer,50,F,6:17
 ,Zac Wise,13,M,6:22
 ,Xan London-Chambers,12,M,6:24
 ,Tricia Ohara,53,F,6:24
 ,David Klinginsmith,25,M,6:24
 ,Bertrand Hauss,42,M,6:25
 ,Derek Richert,52,M,6:25
-,Tristan Roth,35,M,6:31
+,Tristan Roth,35,M,6:29
+,Verity Rees,35,F,6:31
 ,Amy Brown,37,F,6:31
-,Matthew Mason,16,M,6:33
+,Matthew Mason,16,M,6:31
+,Ryan McIrvin,37,M,6:33
+,Kyle Rolfe,38,M,6:33
 ,Paul Bergner,40,M,6:34
 ,Jeff Eger,40,M,6:35
 ,Ryan Templin,36,M,6:38
 ,Noah Orr,36,M,6:38
-,Hal Carlson,67,M,6:45
+,Hal Carlson,67,M,6:41
+,Shane Gianelli,26,M,6:45
 ,Paul Nolan,37,M,6:46
 ,Derek Van Alen,60,M,6:47
 ,Dave Shelley,38,M,6:48
@@ -38,7 +45,8 @@
 ,Alexander Baldwin,12,M,6:57
 ,Adam Cheer,28,M,6:57
 ,Maria Tuccelli,51,F,6:58
-,Kyle Redzinak,26,M,7:00
+,Kyle Redzinak,26,M,6:59
+,Lizanne Venneri,40,F,7:00
 ,Laurel Schoenbohm,36,F,7:00
 ,Connor Raffety,27,M,7:01
 ,Damon Novelli,46,M,7:02
@@ -47,14 +55,18 @@
 ,Scott Koerner,56,M,7:03
 ,Cary Kopczynski,68,M,7:04
 ,Steve Bragalone,42,M,7:04
-,Jason Kenway,36,M,7:06
+,Jason Kenway,36,M,7:05
+,Amanda Nations,38,F,7:06
 ,Kai Chatwin,10,M,7:06
+,Brad Simmons,56,M,7:06
 ,Morgan Paul,13,M,7:07
+,Larry Hennis,63,M,7:07
 ,Christian Benn,47,M,7:07
 ,Hal Carlson,67,M,7:09
 ,Linda Viner,52,F,7:09
 ,Trenton Borland,16,M,7:10
-,Tyler Rocha,23,M,7:14
+,Tyler Rocha,23,M,7:13
+,Stephen Parker,23,M,7:14
 ,Gaofeng Zhu,50,M,7:15
 ,Frank Alvarado,39,M,7:15
 ,Andrei Maksimenka,45,M,7:16
@@ -62,24 +74,30 @@
 ,Madison MIles,43,F,7:19
 ,Bryce Johnson,15,M,7:19
 ,Sean Rundell,40,M,7:20
-,Greg Clinkingbeard,65,M,7:22
-,Mike Vu,31,M,7:24
+,Greg Clinkingbeard,65,M,7:20
+,Michael Byrd,53,M,7:22
+,Mike Vu,31,M,7:23
+,Troy Mason,51,M,7:24
 ,Michael Bassham,35,M,7:25
 ,John Geurts,52,M,7:25
 ,Peter Graff,51,M,7:25
 ,jack cavanaugh,37,M,7:25
-,Charles Borland,34,M,7:27
+,Charles Borland,34,M,7:26
+,Jennifer Previti,34,F,7:27
 ,Colin Mieling,36,M,7:27
 ,Christopher Befumo,49,M,7:27
 ,Chris Clark,29,M,7:28
 ,KC Kennedy,53,F,7:29
 ,Ashlyn LeClercq,15,F,7:31
+,Katya Gudaeva,30,F,7:31
 ,Kathryn Elwell,50,F,7:31
 ,Jeremy Vercillo,27,M,7:32
 ,Benjin Dubishar,27,M,7:33
 ,Paul Lampe,62,M,7:34
-,JOHN FLETCHER,61,M,7:36
+,JOHN FLETCHER,61,M,7:35
+,Sam Gianelli,23,M,7:36
 ,Jared Johnson,16,M,7:36
+,Gary Thompson,53,M,7:36
 ,Eve Berrington,25,F,7:39
 ,Sophia Parsinen,11,F,7:40
 ,Dan Mueller,53,M,7:40
@@ -88,6 +106,7 @@
 ,Joe Gowan,34,M,7:41
 ,amnaj prompinun,66,M,7:42
 ,Jacqlynn Zier,26,F,7:45
+,erin harvego,50,F,7:45
 ,Kyle Davis,27,M,7:45
 ,Marcus Schimizzi,22,M,7:46
 ,Anton Schreiber,10,M,7:47
@@ -105,6 +124,8 @@
 ,Christine Bray,44,F,7:58
 ,Jose Garcia,45,M,7:59
 ,Ken Cates,65,M,8:00
+,Matt Schultz,36,M,8:00
+,Kristi Sullivan,41,F,8:00
 ,John Sisk,38,M,8:01
 ,Rene Onate,32,M,8:02
 ,Robert Schmidt Jr,62,M,8:03
@@ -121,16 +142,20 @@
 ,Connor Simpson,12,M,8:08
 ,Jodi Williams,46,F,8:09
 ,TOM PUENTES,56,M,8:09
-,andrew chow,49,M,8:11
+,andrew chow,49,M,8:09
+,Paul Albee,48,M,8:11
 ,Thomas Nemeth,48,M,8:11
 ,Riya Modi,25,F,8:11
 ,Gabrielle Bates,25,F,8:12
 ,Daria Whettam,38,F,8:12
+,David Hsiao,36,M,8:12
 ,Carlyn Stoll,22,M,8:12
 ,Kirk GLERUM,58,M,8:12
 ,James Shibley,63,M,8:13
-,Andrew Anschell,66,M,8:14
+,Andrew Anschell,66,M,8:13
+,Brad Kaufmann,38,M,8:14
 ,Ben Moore,14,M,8:14
+,Matt Sanford,40,M,8:14
 ,Jon Kawaguchi,51,M,8:14
 ,Jon Gabelein,43,M,8:15
 ,Kait Patterson,27,F,8:15
@@ -147,12 +172,15 @@
 ,Fritz Weiss,43,M,8:18
 ,Summer Smith,34,F,8:19
 ,Finnegan Schrage,13,M,8:19
-,Jon Ladd,39,M,8:20
+,Jon Ladd,39,M,8:19
+,Andrew Martonik,30,M,8:19
+,Ken Stanek,48,M,8:20
 ,Brian Byrne,46,M,8:21
 ,Kaylin Cochran,44,F,8:21
 ,Mark Ashton,65,M,8:21
 ,Miles Sanborn,9,M,8:22
 ,Taraneh Khalighi,13,F,8:23
+,Joe Osowski,45,M,8:23
 ,Hillary Stibbard,60,F,8:23
 ,Jamie Stewart,26,M,8:24
 ,Greta Robinson,8,F,8:25
@@ -190,7 +218,8 @@
 ,Feliciano Acuna Banaga,40,M,8:36
 ,Rowan Weiss,9,M,8:36
 ,Colin Hansen,56,M,8:36
-,Fritz Weiss,43,M,8:38
+,Fritz Weiss,43,M,8:37
+,Tara Melanson,40,F,8:38
 ,Jocelyn Nelson,44,F,8:38
 ,Tony Drovetto,33,M,8:40
 ,James River,26,M,8:41
@@ -201,12 +230,15 @@
 ,Sheri Setzer,49,F,8:44
 ,James Whitaker,38,M,8:44
 ,Rishi Beri,42,M,8:45
+,William Wilcock,56,M,8:45
 ,Jeff Dossett,59,M,8:45
 ,Linden Fatland,13,F,8:46
 ,Casey Anderson,53,M,8:46
+,Robyn Harding,14,F,8:46
 ,Dale Kremer,43,M,8:47
 ,Zac Pierce,28,M,8:47
-,James Feher,27,M,8:48
+,James Feher,27,M,8:47
+,Troy Garrett,55,M,8:48
 ,Joanne Bonoan,36,F,8:48
 ,Jennifer Desideri,42,F,8:49
 ,James Le,30,M,8:49
@@ -221,6 +253,7 @@
 ,Kiran Joe,10,F,8:53
 ,Matthew Byington,30,M,8:54
 ,Grace Oppenheimer,31,F,8:55
+,Brian Besmanoff,26,M,8:55
 ,John Boling,49,M,8:56
 ,Jason Choate,44,M,8:56
 ,Jenny Stone,45,F,8:56
@@ -229,7 +262,8 @@
 ,Melissa Bahr,43,F,8:57
 ,Emilie Szeto,37,F,8:58
 ,Erin Drayer,46,F,8:59
-,Liang Yeh,37,M,9:01
+,Liang Yeh,37,M,8:59
+,Max Haglund,30,M,9:01
 ,Marcy Grantor,50,F,9:01
 ,Jeanne Gersten,59,F,9:02
 ,Mark Maszak,49,M,9:02
@@ -244,15 +278,18 @@
 ,Tom Payne,65,M,9:04
 ,Louis Hillegass,51,M,9:04
 ,Birgit Saalfeld,39,F,9:04
-,Colin Schoener,15,M,9:05
+,Colin Schoener,15,M,9:04
+,David Nelson,61,M,9:05
 ,KRISTIN LASTWIKA,34,F,9:05
 ,Sherry Clarke,35,F,9:06
 ,Angela Bates,51,F,9:06
 ,Ken Stanek,48,M,9:06
-,Dan Wise,44,F,9:08
+,Dan Wise,44,F,9:07
+,Jen Wuest,43,F,9:08
 ,Clarisse Joy Absalon,17,F,9:08
 ,Janice Andrews,61,F,9:08
 ,John Sullivan,49,M,9:10
+,Erika Carroll,31,F,9:10
 ,Andrew Belousek,36,M,9:10
 ,Erin Gunter,27,F,9:11
 ,Sarah Ammons,15,F,9:11
@@ -341,7 +378,8 @@
 ,Elizabeth Tinsman,31,F,9:56
 ,Eric Pena,31,M,9:56
 ,Genelyn Longenecker,23,F,9:57
-,Carol Brown,52,F,10:00
+,Carol Brown,52,F,9:59
+,Kristin Burke,41,F,10:00
 ,Spencer Mueller,13,M,10:01
 ,Erin Gunter,27,F,10:02
 ,Loghan LaMay,11,F,10:02
@@ -357,6 +395,7 @@
 ,Barbara Berg,57,F,10:05
 ,Charles Stevens,41,M,10:05
 ,Tonya DelMaestro,43,F,10:06
+,Kaelin Carson,31,F,10:06
 ,Kyle Wolcott,30,M,10:07
 ,Rosalyn Jonas,26,F,10:08
 ,Matthew Schreiber,53,M,10:08
@@ -389,6 +428,7 @@
 ,Andrew Krogermeier,55,M,10:18
 ,Jason Vandervlugt,41,M,10:18
 ,Jackson Baerny,15,M,10:19
+,Donald Staples,45,M,10:19
 ,Daron Henry,51,M,10:19
 ,Satish Thatte,66,M,10:19
 ,Julie Donaldson,67,F,10:22
@@ -399,6 +439,8 @@
 ,Ellie Smith,17,F,10:24
 ,Jeffrey Ricco,43,M,10:24
 ,Dorothy Shapiro,74,F,10:26
+,Scott Crooks,60,M,10:26
+,Mark McDermott,59,M,10:26
 ,Jeff Noble,41,M,10:26
 ,Greg Marsh,58,M,10:27
 ,Ryan Trad,23,M,10:28
@@ -406,7 +448,9 @@
 ,Shayna Johnson,38,F,10:29
 ,Ashley Martin,29,F,10:31
 ,Jan Hillegass,52,F,10:31
-,David Soma,SPECIFIED,NOT,10:32
+,Carolyn Wallace,42,F,10:31
+,David Soma,SPECIFIED,NOT,10:31
+,Ilan Birman,30,M,10:32
 ,Sean Boyd,40,M,10:32
 ,Gary Hauff,57,M,10:32
 ,Bruce Hartley,55,M,10:33
@@ -421,7 +465,8 @@
 ,Eva Dent,9,F,10:38
 ,Sarah Donaldson,34,F,10:39
 ,Carol Marty,45,F,10:39
-,Erik Jensen,31,M,10:40
+,Erik Jensen,31,M,10:39
+,Reece Gleadle,27,F,10:40
 ,Laurie Thornton,44,F,10:40
 ,Jeremy Carlson,42,M,10:40
 ,Lillian Adacutt,29,F,10:42
@@ -544,7 +589,8 @@
 ,Linda Glas,50,F,11:33
 ,Randy Cote,32,M,11:33
 ,Amelia Sherinski,31,F,11:33
-,Julia Zajac,17,F,11:35
+,Julia Zajac,17,F,11:34
+,Morgan Webb,29,F,11:35
 ,Bruce Gilbert,74,M,11:36
 ,Angela Litzinger,45,F,11:36
 ,Tim Mckey,54,M,11:36
@@ -562,6 +608,7 @@
 ,Jessica Chiang,38,F,11:42
 ,Ryan Fowler,25,M,11:42
 ,Kelsey Fatland,45,F,11:43
+,Sarah Gerke,38,F,11:43
 ,Henry Apfel,28,M,11:43
 ,Elizabeth Gregory,11,F,11:44
 ,Christine Keating,46,M,11:44
@@ -593,6 +640,7 @@
 ,Christy Johnson,45,F,12:02
 ,Maeve Sullivan,15,F,12:02
 ,Kelly Wardle,33,F,12:03
+,Kelly VanGilder,55,F,12:03
 ,Steven Sparkman,46,M,12:03
 ,Johnny Trash,58,M,12:04
 ,Judy Wong,66,F,12:04
@@ -630,6 +678,7 @@
 ,Randi Holtman,25,F,12:20
 ,Elizabeth Rose,12,F,12:21
 ,Tracy Griffin,58,F,12:21
+,Greg Snead,54,M,12:21
 ,Dean Handaly,58,M,12:21
 ,Matthew Moulton,28,M,12:21
 ,Amy Parsons,41,F,12:22
@@ -638,10 +687,12 @@
 ,Troy heavener,39,M,12:25
 ,Sarah Johnson,29,F,12:27
 ,Margie Kozich,55,F,12:27
-,Kay Esposito,16,F,12:29
+,Kay Esposito,16,F,12:27
+,Lanell Aoki,56,F,12:29
 ,Daniel Porter,26,M,12:29
 ,Katarzyna Zajac,44,F,12:29
 ,Rose Handaly,17,F,12:30
+,Carrie Meyer,44,F,12:30
 ,Desirae Brownlee,35,F,12:30
 ,Brittany Montano,33,F,12:31
 ,Manasi Kudtarkar,34,F,12:31
@@ -650,6 +701,7 @@
 ,Elizabeth Bridges,59,F,12:32
 ,Andrew Lientz,SPECIFIED,NOT,12:32
 ,Kathleen Likely,58,F,12:33
+,Aimee Ashley,44,F,12:33
 ,Laura Armstrong,41,F,12:34
 ,Brianna Mahoney,40,F,12:35
 ,Sarah Rockwell,36,F,12:37
@@ -661,8 +713,10 @@
 ,Kimberly Kelly,36,F,12:43
 ,Ashley Sanders,12,F,12:43
 ,Keith LaMay,55,M,12:44
+,Deb Irby,50,F,12:44
 ,Charles Trinidad,23,M,12:45
 ,Pearl Lientz,SPECIFIED,NOT,12:45
+,John Emory,50,M,12:45
 ,Siena LaMay,13,F,12:45
 ,Beth Potts,50,F,12:47
 ,Ryan Ashley,12,M,12:47
@@ -750,7 +804,8 @@
 ,Jenny Keylon,47,F,13:41
 ,Helen Halstead,60,F,13:42
 ,John Emory,50,M,13:42
-,Madison Lockhart,26,F,13:44
+,Madison Lockhart,26,F,13:43
+,Krystal Madrinan,23,F,13:44
 ,Carolyn Gross,54,F,13:46
 ,Jackie Bowne,44,F,13:47
 ,David Aronchick,45,M,13:48
@@ -807,6 +862,7 @@
 ,Sugar Sylvain,31,F,14:37
 ,Stacey Hoogerhyde,30,F,14:37
 ,Julie Christopher,61,F,14:38
+,Terry Seidler,79,M,14:38
 ,Lisa Studeman,51,F,14:39
 ,Hope Ryan,20,F,14:40
 ,Reina Gutierrez,61,F,14:40
@@ -856,6 +912,7 @@
 ,Sarah Sparkman,46,F,15:38
 ,Kate Maroney,26,F,15:39
 ,Maria Ewing,53,F,15:39
+,Kate Brod,31,F,15:39
 ,Stepheb McGuire,33,M,15:40
 ,Skip Knutsen,49,M,15:42
 ,Jennifer Johnson,43,F,15:43
@@ -870,7 +927,8 @@
 ,Hemanshukumar Prajapati,28,M,15:51
 ,Susan Ragen,60,F,15:52
 ,Marian Anderson,38,F,15:53
-,Felix Gonzalez,38,M,15:55
+,Felix Gonzalez,38,M,15:53
+,Tracy Holohan,64,F,15:55
 ,Shelby McGrain,39,F,15:56
 ,Kai Gyarmathy,10,M,16:02
 ,Elizabeth Carosso,49,F,16:04
@@ -893,7 +951,8 @@
 ,Debbie Whitney,59,F,16:36
 ,Joseph Wong,41,M,16:40
 ,Carol Batteen,69,F,16:42
-,Anita Beshears,59,F,16:44
+,Anita Beshears,59,F,16:42
+,Megan Fricke,45,F,16:44
 ,Elena Moye Johnston,44,F,16:45
 ,Nancy Kvinge,61,F,16:53
 ,Marci Morford,31,F,16:58
@@ -934,7 +993,8 @@
 ,ISATOU CEESAY,43,F,19:40
 ,Katherine Langcaon,27,F,19:47
 ,Autumn Hong,48,F,19:50
-,Theresa Jordan,41,F,20:02
+,Theresa Jordan,41,F,19:58
+,Jen Miller,36,F,20:02
 ,Nicole Mertes,74,F,20:04
 ,Donita Bixby,67,F,20:06
 ,Lou Mertes,80,M,20:11
@@ -956,7 +1016,8 @@
 ,Kairi Oswald,13,F,22:44
 ,Kalyn Oswald,31,F,23:06
 ,Rebecca Payne,28,F,23:29
-,Robin Ethridge,41,F,23:35
+,Robin Ethridge,41,F,23:29
+,Rachel Mehrlich,32,F,23:35
 ,Tayler Waltmann,25,M,23:35
 ,Priya Santhanam,SPECIFIED,NOT,23:44
 ,Carrington Lannon,37,F,24:07
@@ -983,3 +1044,4 @@
 ,Matthew Penn,31,M,6:19:54
 ,alec anderson,33,M,6:20:08
 ,sreehari vchandrasekharan,34,M,6:28:11
+,jan essley,68,F,7:02:38
