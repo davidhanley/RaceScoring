@@ -30,7 +30,13 @@ def sub_report( sex , range , limit , sexname ):
     if not (row[1] in ignores):
       r2.append( list( row ) )
       #print '<table border="3">'
-  rank = 1
+  #assign ranks
+
+  _rank = 1
+  for row in r2:
+    row.append(rank)
+    rank = rank + 1
+
   for row in r2:
 
     age = row[2]
@@ -38,6 +44,8 @@ def sub_report( sex , range , limit , sexname ):
     row[ 3 ] = "%.2f" % points
     id = row[ 0 ]
     row = row[ 1: ]
+
+    rank = row[-1]
 
     name = row[ 0 ].encode( 'ascii' , 'replace' )
     row[ 0 ] = "#%d %s" % ( rank ,  name )
