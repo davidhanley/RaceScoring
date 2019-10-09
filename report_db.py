@@ -33,9 +33,12 @@ def sub_report( sex , range , limit , sexname ):
   #assign ranks
 
   _rank = 1
+  prev = None
   for row in r2:
-    row.append(rank)
-    rank = rank + 1
+    row.append(_rank)
+    if prev<>None and prev[3] == row[3]:
+      row[-1]=prev[-1]
+    _rank = _rank + 1
 
   for row in r2:
 
