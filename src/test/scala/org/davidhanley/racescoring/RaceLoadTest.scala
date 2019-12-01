@@ -20,7 +20,8 @@ class RaceLoadTest extends FlatSpec with Matchers {
     v.name shouldBe "2019 Empire State Run Up"
     v.date shouldBe "2019-5-15"
     v.points shouldBe 200
-
   }
+
+
 }
 

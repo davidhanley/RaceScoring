@@ -3,10 +3,6 @@ package org.davidhanley.racescoring
 
 case class Race(name: String, points: Int, date: String)
 
-case class GenderResults(pointsBase: Int) {
-
-}
-
 
 object RaceParser {
 
@@ -17,7 +13,7 @@ object RaceParser {
     val url = lines.next()
     val points = lines.next().toInt
 
-    val rest = lines.toSeq
+    val rest: Seq[Array[String]] = lines.toSeq.map(line => line.toUpperCase().split(","))
 
     Race(name, points, date)
 
