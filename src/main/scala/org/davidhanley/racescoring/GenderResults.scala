@@ -8,7 +8,7 @@ case class GenderResults(gender: Char, pointsBase: Int, results: Seq[(Int, Doubl
 
 object GenderResults {
 
-  def parseGenderResults(db: AthleteDB, gender: Char, pointsBase: Int, rows: Seq[Array[String]]): GenderResults = {
+  def parseGenderResults(race: String, db: AthleteDB, gender: Char, pointsBase: Int, rows: Seq[Array[String]]): GenderResults = {
 
     val pbf = pointsBase * 5.0
 
@@ -22,8 +22,10 @@ object GenderResults {
     for (row <- rows) {
       try {
         if (row(3)(0) == gender) {
-          val v = db.lookUpAthlete(row(1), row(2).toInt)
-          ab.append((rank, scoreForRank(rank), v))
+          val athlete = db.lookUpAthlete(row(1), row(3)(0), row(2).toInt)
+          val points = scoreForRank(rank)
+          ab.append((rank, points, athlete))
+          athlete.addResult(row(1), rank, points)
           rank = rank + 1
         }
       } catch {

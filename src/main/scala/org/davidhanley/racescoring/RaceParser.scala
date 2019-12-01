@@ -15,6 +15,9 @@ object RaceParser {
 
     val rest: Seq[Array[String]] = lines.toSeq.map(line => line.toUpperCase().split(","))
 
+    //val db = new AthleteDB()
+    //val fr = GenderResults.parseGenderResults(name,)
+
     Race(name, points, date)
 
 
